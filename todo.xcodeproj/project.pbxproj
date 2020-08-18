@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B10A531A24E40466005F898F /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10A531924E40466005F898F /* TodoCell.swift */; };
+		B10A531C24E40986005F898F /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10A531B24E40986005F898F /* Todo.swift */; };
+		B10A531E24E40A16005F898F /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10A531D24E40A16005F898F /* APIError.swift */; };
+		B10A532124E412AD005F898F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10A532024E412AD005F898F /* NetworkService.swift */; };
 		B1235E4A24E3FEEF0071E55B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1235E4924E3FEEF0071E55B /* AppDelegate.swift */; };
 		B1235E4C24E3FEEF0071E55B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1235E4B24E3FEEF0071E55B /* SceneDelegate.swift */; };
-		B1235E4E24E3FEEF0071E55B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1235E4D24E3FEEF0071E55B /* ViewController.swift */; };
+		B1235E4E24E3FEEF0071E55B /* TodoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1235E4D24E3FEEF0071E55B /* TodoVC.swift */; };
 		B1235E5124E3FEF00071E55B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1235E4F24E3FEF00071E55B /* Main.storyboard */; };
 		B1235E5324E3FEF50071E55B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1235E5224E3FEF50071E55B /* Assets.xcassets */; };
 		B1235E5624E3FEF50071E55B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1235E5424E3FEF50071E55B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B10A531924E40466005F898F /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
+		B10A531B24E40986005F898F /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		B10A531D24E40A16005F898F /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		B10A532024E412AD005F898F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		B1235E4624E3FEEF0071E55B /* todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1235E4924E3FEEF0071E55B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1235E4B24E3FEEF0071E55B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B1235E4D24E3FEEF0071E55B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B1235E4D24E3FEEF0071E55B /* TodoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoVC.swift; sourceTree = "<group>"; };
 		B1235E5024E3FEF00071E55B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B1235E5224E3FEF50071E55B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1235E5524E3FEF50071E55B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +45,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B10A531624E4042A005F898F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B1235E4D24E3FEEF0071E55B /* TodoVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B10A531724E40435005F898F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B10A531924E40466005F898F /* TodoCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B10A531824E4043B005F898F /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				B10A531B24E40986005F898F /* Todo.swift */,
+				B10A531D24E40A16005F898F /* APIError.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		B10A531F24E4129C005F898F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B10A532024E412AD005F898F /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		B1235E3D24E3FEEF0071E55B = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +97,12 @@
 		B1235E4824E3FEEF0071E55B /* todo */ = {
 			isa = PBXGroup;
 			children = (
+				B10A531F24E4129C005F898F /* Services */,
+				B10A531824E4043B005F898F /* Modal */,
+				B10A531724E40435005F898F /* View */,
+				B10A531624E4042A005F898F /* Controller */,
 				B1235E4924E3FEEF0071E55B /* AppDelegate.swift */,
 				B1235E4B24E3FEEF0071E55B /* SceneDelegate.swift */,
-				B1235E4D24E3FEEF0071E55B /* ViewController.swift */,
 				B1235E4F24E3FEF00071E55B /* Main.storyboard */,
 				B1235E5224E3FEF50071E55B /* Assets.xcassets */,
 				B1235E5424E3FEF50071E55B /* LaunchScreen.storyboard */,
@@ -138,9 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1235E4E24E3FEEF0071E55B /* ViewController.swift in Sources */,
+				B10A531C24E40986005F898F /* Todo.swift in Sources */,
+				B1235E4E24E3FEEF0071E55B /* TodoVC.swift in Sources */,
 				B1235E4A24E3FEEF0071E55B /* AppDelegate.swift in Sources */,
 				B1235E4C24E3FEEF0071E55B /* SceneDelegate.swift in Sources */,
+				B10A531A24E40466005F898F /* TodoCell.swift in Sources */,
+				B10A531E24E40A16005F898F /* APIError.swift in Sources */,
+				B10A532124E412AD005F898F /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tckr.todo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +360,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tckr.todo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
